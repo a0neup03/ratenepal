@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇳🇵 Nepal Office Tracker - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        select:focus, input:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .office-card {
+            border: 2px solid #e1e8ed;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .office-card:hover {
+            border-color: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .office-card.selected {
+            border-color: #27ae60;
+            background-color: #f8fff9;
+        }
+
+        .service-card {
+            border: 2px solid #e1e8ed;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: #3498db;
+        }
+
+        .service-card.selected {
+            border-color: #27ae60;
+            background-color: #f8fff9;
+        }
+
+        .timer-display {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .timer-time {
+            font-size: 64px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .timer-time.warning { color: #f39c12; }
+        .timer-time.danger { color: #e74c3c; }
+
+        .start-button {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transform: scale(1);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .start-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+        }
+
+        .end-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .end-button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .success-button {
+            background: #27ae60;
+            color: white;
+        }
+
+        .fail-button {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .end-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .star {
+            font-size: 30px;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .star:hover,
+        .star.selected {
+            color: #f39c12;
+        }
+
+        .boolean-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .boolean-button {
+            padding: 10px 20px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .boolean-button.selected {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+
+        .next-button {
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            float: right;
+        }
+
+        .next-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .next-button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .info-box {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            background: #d5edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .progress-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .progress-step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e1e8ed;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        .progress-step.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .progress-step.completed {
+            background: #27ae60;
+            color: white;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🇳🇵 Nepal Government Office Experience Tracker</h1>
+            <p>नेपाल सरकारी कार्यालय अनुभव ट्र्याकर</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-step active" id="progress-1">1</div>
+            <div class="progress-step" id="progress-2">2</div>
+            <div class="progress-step" id="progress-3">3</div>
+            <div class="progress-step" id="progress-4">4</div>
+            <div class="progress-step" id="progress-5">5</div>
+        </div>
+
+        <!-- Step 1: District Selection -->
+        <div class="step active" id="step1">
+            <h2>🌍 आफ्नो जिल्ला छान्नुहोस् (Select Your District)</h2>
+            
+            <div class="form-group">
+                <label>प्रदेश (Province):</label>
+                <select id="province" onchange="updateDistricts()">
+                    <option value="">प्रदेश छान्नुहोस्... (Select Province...)</option>
+                    <option value="Koshi Province">Koshi Province</option>
+                    <option value="Madhesh Province">Madhesh Province</option>
+                    <option value="Bagmati Province">Bagmati Province</option>
+                    <option value="Gandaki Province">Gandaki Province</option>
+                    <option value="Lumbini Province">Lumbini Province</option>
+                    <option value="Karnali Province">Karnali Province</option>
+                    <option value="Sudurpashchim Province">Sudurpashchim Province</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>जिल्ला (District):</label>
+                <select id="district" onchange="updateNext(1)" disabled>
+                    <option value="">जिल्ला छान्नुहोस्... (Select District...)</option>
+                </select>
+            </div>
+
+            <div class="info-box">
+                <p><strong>📊 कुल: 77 जिल्लाहरू उपलब्ध</strong></p>
+                <p>Total: 77 districts available</p>
+            </div>
+
+            <div class="clearfix">
+                <button class="next-button" onclick="nextStep(2)" id="next1" disabled>अगाडि बढ्नुहोस् →</button>
+            </div>
+        </div>
+
+        <!-- Step 2: Office Selection -->
+        <div class="step" id="step2">
+            <h2>🏢 कार्यालय र सेवा छान्नुहोस् (Select Office & Service)</h2>
+            
+            <div class="info-box">
+                <p id="location-info">📍 स्थान: </p>
+            </div>
+
+            <div class="form-group">
+                <label>कार्यालयको प्रकार (Office Type):</label>
+                <div class="office-card" onclick="selectOfficeType('dao')">
+                    <h3>District Administration Office (DAO)</h3>
+                    <p>जिल्ला प्रशासन कार्यालय</p>
+                    <p><small>Services: Citizenship Certificate, Various permits</small></p>
+                </div>
+                <div class="office-card" onclick="selectOfficeType('passport')">
+                    <h3>Passport Department</h3>
+                    <p>राहदानी विभाग</p>
+                    <p><small>Services: E-Passport Application</small></p>
+                </div>
+                <div class="office-card" onclick="selectOfficeType('transport')">
+                    <h3>Transport Management Office</h3>
+                    <p>यातायात व्यवस्थापन कार्यालय</p>
+                    <p><small>Services: Driving License, Vehicle Registration</small></p>
+                </div>
+            </div>
+
+            <div id="services-section" style="display: none;">
+                <label>सेवा/काम (Service/Task):</label>
+                <div id="services-list"></div>
+            </div>
+
+            <div class="clearfix">
+                <button class="next-button" onclick="nextStep(3)" id="next2" disabled>टाइमर सुरु गर्नुहोस् →</button>
+            </div>
+        </div>
+
+        <!-- Step 3: Timer -->
+        <div class="step" id="step3">
+            <h2>⏱️ भिजिट ट्र्याकर (Visit Tracker)</h2>
+            
+            <div class="info-box">
+                <h3 id="office-info">कार्यालय: </h3>
+                <p id="service-info">सेवा: </p>
+            </div>
+
+            <div class="timer-display">
+                <div id="timer-instructions">
+                    <p style="font-size: 18px; margin-bottom: 20px;">कार्यालयमा पुगेपछि टाइमर सुरु गर्नुहोस्</p>
+                    <p style="color: #7f8c8d; margin-bottom: 30px;">Start timer when you arrive at the office</p>
+                    <button class="start-button" onclick="startTimer()">
+                        🚨 टाइमर सुरु गर्नुहोस् (START TIMER)
+                    </button>
+                </div>
+                
+                <div id="timer-running" style="display: none;">
+                    <div class="timer-time" id="timer-display">00:00</div>
+                    <p style="font-size: 18px; color: #7f8c8d; margin-bottom: 30px;">पर्खाइ जारी... (Waiting ongoing...)</p>
+                    
+                    <div class="end-buttons">
+                        <button class="end-button success-button" onclick="endVisit('success')">
+                            ✅ काम भयो<br><small>(Service Successful)</small>
+                        </button>
+                        <button class="end-button fail-button" onclick="endVisit('failed')">
+                            ❌ काम भएन<br><small>(Service Failed)</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Rating -->
+        <div class="step" id="step4">
+            <h2>📝 अनुभव रेटिङ र फिडब्याक (Experience Rating & Feedback)</h2>
+            
+            <div class="info-box">
+                <p id="visit-summary">⏱️ कुल समय: </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <!-- Left: Star Ratings -->
+                <div>
+                    <h3 style="margin-bottom: 20px;">⭐ रेटिङ्गहरू (Ratings)</h3>
+                    
+                    <div class="form-group">
+                        <label>समग्र अनुभव (Overall Experience):</label>
+                        <div class="stars" data-rating="overall"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>कर्मचारीको व्यवहार (Staff Behavior):</label>
+                        <div class="stars" data-rating="staff"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>कार्यालयको सफाई (Office Cleanliness):</label>
+                        <div class="stars" data-rating="cleanliness"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>प्रक्रियाको दक्षता (Process Efficiency):</label>
+                        <div class="stars" data-rating="efficiency"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>जानकारीको स्पष्टता (Information Clarity):</label>
+                        <div class="stars" data-rating="clarity"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Nepali Questions -->
+                <div>
+                    <h3 style="margin-bottom: 20px;">❓ प्रश्नहरू (Questions)</h3>
+                    
+                    <div class="form-group">
+                        <label style="color: #e74c3c; font-weight: bold;">के तपाईंलाई घुस माग्यो? (Did they ask for bribe?)</label>
+                        <div class="boolean-buttons" data-question="bribe">
+                            <button class="boolean-button" data-answer="no">❌ छैन / No</button>
+                            <button class="boolean-button" data-answer="yes">✅ छ / Yes</button>
+                            <button class="boolean-button" data-answer="na">🤷 थाहा छैन / N/A</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>तपाईंले कतिवटा कोठामा जानुपर्‍यो?</label>
+                        <div class="boolean-buttons" data-question="rooms">
+                            <button class="boolean-button" data-answer="easy">सजिलो</button>
+                            <button class="boolean-button" data-answer="okay">ठीकै</button>
+                            <button class="boolean-button" data-answer="tortured">दुःख दिए मुर्दार हरुले</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>तपाईंले दलाल/एजेन्ट (चोर हरु) प्रयोग गर्नुपर्‍यो?</label>
+                        <div class="boolean-buttons" data-question="dalal">
+                            <button class="boolean-button" data-answer="paryo">पर्‍यो</button>
+                            <button class="boolean-button" data-answer="parena">परेन</button>
+                            <button class="boolean-button" data-answer="na">थाहा छैन</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>कर्मचारी सहयोगी र विनम्र थिए?</label>
+                        <div class="boolean-buttons" data-question="helpful">
+                            <button class="boolean-button" data-answer="thiye">थिए</button>
+                            <button class="boolean-button" data-answer="thiyenan">थिएनन्</button>
+                            <button class="boolean-button" data-answer="na">थाहा छैन</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>प्रक्रिया स्पष्ट र बुझ्न सजिलो थियो?</label>
+                        <div class="boolean-buttons" data-question="clear">
+                            <button class="boolean-button" data-answer="thiyo">थियो</button>
+                            <button class="boolean-button" data-answer="thiyena">थिएन</button>
+                            <button class="boolean-button" data-answer="na">थाहा छैन</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>सुझावहरू (Suggestions):</label>
+                        <textarea placeholder="कार्यालयलाई कसरी सुधार गर्न सकिन्छ?" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix" style="margin-top: 30px;">
+                <button class="next-button" onclick="nextStep(5)" id="next4" disabled>फिडब्याक पेश गर्नुहोस् →</button>
+            </div>
+        </div>
+
+        <!-- Step 5: Complete -->
+        <div class="step" id="step5">
+            <div class="success-message">
+                <div style="font-size: 64px; margin-bottom: 20px;">🎉</div>
+                <h2>धन्यवाद! (Thank You!)</h2>
+                <p style="font-size: 18px; margin: 20px 0;">तपाईंको फिडब्याक सफलतापूर्वक पेश गरियो।</p>
+                <p style="color: #7f8c8d;">Your feedback has been submitted successfully.</p>
+                
+                <div style="margin-top: 30px;">
+                    <button class="next-button" onclick="startOver()">🔄 फेरि सुरु गर्नुहोस् (Start Again)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let currentStep = 1;
+        let selectedData = {};
+        let timerInterval;
+        let startTime;
+        let ratings = {};
+
+        // District data
+        const districtData = {
+            "Koshi Province": ["Bhojpur", "Dhankuta", "Ilam", "Jhapa", "Khotang", "Morang", "Okhaldhunga", "Panchthar", "Sankhuwasabha", "Solukhumbu", "Sunsari", "Taplejung", "Tehrathum", "Udayapur"],
+            "Madhesh Province": ["Bara", "Dhanusha", "Mahottari", "Parsa", "Rautahat", "Saptari", "Sarlahi", "Siraha"],
+            "Bagmati Province": ["Bhaktapur", "Chitwan", "Dhading", "Dolakha", "Kathmandu", "Kavrepalanchok", "Lalitpur", "Makwanpur", "Nuwakot", "Ramechhap", "Rasuwa", "Sindhuli", "Sindhupalchok"],
+            "Gandaki Province": ["Baglung", "Gorkha", "Kaski", "Lamjung", "Manang", "Mustang", "Myagdi", "Nawalpur (Bardaghat Susta East)", "Parbat", "Syangja", "Tanahun"],
+            "Lumbini Province": ["Arghakhanchi", "Banke", "Bardiya", "Dang", "Eastern Rukum", "Gulmi", "Kapilvastu", "Parasi (Bardaghat Susta West)", "Palpa", "Pyuthan", "Rolpa", "Rupandehi"],
+            "Karnali Province": ["Dailekh", "Dolpa", "Humla", "Jajarkot", "Jumla", "Kalikot", "Mugu", "Salyan", "Surkhet", "Western Rukum"],
+            "Sudurpashchim Province": ["Achham", "Baitadi", "Bajhang", "Bajura", "Dadeldhura", "Darchula", "Doti", "Kailali", "Kanchanpur"]
+        };
+
+        // Service data
+        const serviceData = {
+            'dao': [
+                { id: 'citizenship', name: 'Citizenship Certificate', nepali: 'नागरिकता प्रमाणपत्र' }
+            ],
+            'passport': [
+                { id: 'passport_app', name: 'E-Passport Application', nepali: 'राहदानी आवेदन' }
+            ],
+            'transport': [
+                { id: 'driving_license', name: 'Driving License', nepali: 'सवारी चालक अनुमतिपत्र' },
+                { id: 'vehicle_reg', name: 'Vehicle Registration', nepali: 'सवारी दर्ता' }
+            ]
+        };
+
+        // Update districts based on province selection
+        function updateDistricts() {
+            const province = document.getElementById('province').value;
+            const districtSelect = document.getElementById('district');
+            
+            districtSelect.innerHTML = '<option value="">जिल्ला छान्नुहोस्... (Select District...)</option>';
+            
+            if (province && districtData[province]) {
+                districtSelect.disabled = false;
+                districtData[province].forEach(district => {
+                    const option = document.createElement('option');
+                    option.value = district;
+                    option.textContent = district;
+                    districtSelect.appendChild(option);
+                });
+            } else {
+                districtSelect.disabled = true;
+            }
+            
+            updateNext(1);
+        }
+
+        // Update next button state
+        function updateNext(step) {
+            const nextBtn = document.getElementById(`next${step}`);
+            
+            if (step === 1) {
+                const province = document.getElementById('province').value;
+                const district = document.getElementById('district').value;
+                nextBtn.disabled = !province || !district;
+                
+                if (province && district) {
+                    selectedData.province = province;
+                    selectedData.district = district;
+                }
+            }
+        }
+
+        // Select office type
+        function selectOfficeType(type) {
+            // Clear previous selections
+            document.querySelectorAll('.office-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Select current card
+            event.target.closest('.office-card').classList.add('selected');
+            selectedData.officeType = type;
+            
+            // Show services
+            const servicesSection = document.getElementById('services-section');
+            const servicesList = document.getElementById('services-list');
+            
+            servicesSection.style.display = 'block';
+            servicesList.innerHTML = '';
+            
+            serviceData[type].forEach(service => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = 'service-card';
+                serviceCard.onclick = () => selectService(service);
+                serviceCard.innerHTML = `
+                    <h4>${service.name}</h4>
+                    <p>${service.nepali}</p>
+                `;
+                servicesList.appendChild(serviceCard);
+            });
+            
+            document.getElementById('next2').disabled = true;
+        }
+
+        // Select service
+        function selectService(service) {
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            event.target.closest('.service-card').classList.add('selected');
+            selectedData.service = service;
+            document.getElementById('next2').disabled = false;
+        }
+
+        // Move to next step
+        function nextStep(step) {
+            // Hide current step
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            
+            // Update progress
+            document.getElementById(`progress-${currentStep}`).classList.remove('active');
+            document.getElementById(`progress-${currentStep}`).classList.add('completed');
+            
+            // Show next step
+            currentStep = step;
+            document.getElementById(`step${step}`).classList.add('active');
+            document.getElementById(`progress-${step}`).classList.add('active');
+            
+            // Setup step-specific content
+            if (step === 2) {
+                document.getElementById('location-info').textContent = `📍 स्थान: ${selectedData.district}, ${selectedData.province}`;
+            } else if (step === 3) {
+                document.getElementById('office-info').textContent = `कार्यालय: ${getOfficeName(selectedData.officeType)} - ${selectedData.district}`;
+                document.getElementById('service-info').textContent = `सेवा: ${selectedData.service.name} (${selectedData.service.nepali})`;
+            }
+        }
+
+        // Get office name
+        function getOfficeName(type) {
+            const names = {
+                'dao': 'District Administration Office',
+                'passport': 'Passport Department',
+                'transport': 'Transport Management Office'
+            };
+            return names[type] || type;
+        }
+
+        // Start timer
+        function startTimer() {
+            document.getElementById('timer-instructions').style.display = 'none';
+            document.getElementById('timer-running').style.display = 'block';
+            
+            startTime = new Date();
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        // Update timer display
+        function updateTimer() {
+            const now = new Date();
+            const elapsed = Math.floor((now - startTime) / 1000);
+            
+            const minutes = Math.floor(elapsed / 60);
+            const seconds = elapsed % 60;
+            
+            const display = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            const timerElement = document.getElementById('timer-display');
+            
+            timerElement.textContent = display;
+            
+            // Change color based on time
+            if (elapsed > 1800) { // > 30 minutes
+                timerElement.className = 'timer-time danger';
+            } else if (elapsed > 900) { // > 15 minutes
+                timerElement.className = 'timer-time warning';
+            }
+        }
+
+        // End visit
+        function endVisit(status) {
+            clearInterval(timerInterval);
+            
+            const endTime = new Date();
+            const totalMinutes = Math.floor((endTime - startTime) / (1000 * 60));
+            
+            selectedData.waitTime = totalMinutes;
+            selectedData.status = status;
+            
+            document.getElementById('visit-summary').textContent = 
+                `⏱️ कुल समय: ${totalMinutes} मिनेट (Total time: ${totalMinutes} minutes) | 📊 स्थिति: ${status === 'success' ? '✅ काम भयो (Successful)' : '❌ काम भएन (Failed)'}`;
+            
+            // Initialize star ratings
+            initializeStarRatings();
+            initializeBooleanQuestions();
+            
+            nextStep(4);
+        }
+
+        // Initialize star ratings
+        function initializeStarRatings() {
+            document.querySelectorAll('.stars').forEach(starsContainer => {
+                starsContainer.innerHTML = '';
+                const ratingType = starsContainer.dataset.rating;
+                
+                for (let i = 1; i <= 5; i++) {
+                    const star = document.createElement('span');
+                    star.className = 'star';
+                    star.textContent = '☆';
+                    star.onclick = () => setRating(ratingType, i);
+                    starsContainer.appendChild(star);
+                }
+            });
+        }
+
+        // Set rating
+        function setRating(type, rating) {
+            ratings[type] = rating;
+            
+            const starsContainer = document.querySelector(`[data-rating="${type}"]`);
+            const stars = starsContainer.querySelectorAll('.star');
+            
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.textContent = '★';
+                    star.classList.add('selected');
+                } else {
+                    star.textContent = '☆';
+                    star.classList.remove('selected');
+                }
+            });
+            
+            checkRatingComplete();
+        }
+
+        // Initialize boolean questions
+        function initializeBooleanQuestions() {
+            document.querySelectorAll('.boolean-buttons').forEach(buttonGroup => {
+                buttonGroup.querySelectorAll('.boolean-button').forEach(button => {
+                    button.onclick = function() {
+                        // Clear previous selection
+                        buttonGroup.querySelectorAll('.boolean-button').forEach(btn => {
+                            btn.classList.remove('selected');
+                        });
+                        
+                        // Select current button
+                        this.classList.add('selected');
+                        checkRatingComplete();
+                    };
+                });
+            });
+        }
+
+        // Check if rating is complete
+        function checkRatingComplete() {
+            const requiredRatings = ['overall', 'staff', 'cleanliness', 'efficiency', 'clarity'];
+            const allRated = requiredRatings.every(rating => ratings[rating] > 0);
+
+            const requiredQuestions = ['bribe', 'rooms', 'helpful', 'clear', 'dalal'];
+            const allQuestionsAnswered = requiredQuestions.every(question => {
+                const buttonGroup = document.querySelector(`[data-question="${question}"]`);
+                return buttonGroup.querySelector('.selected');
+            });
+            
+            document.getElementById('next4').disabled = !allRated || !allQuestionsAnswered;
+        }
+
+        // Start over
+        function startOver() {
+            currentStep = 1;
+            selectedData = {};
+            ratings = {};
+            
+            // Reset all progress steps
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById(`step${i}`).classList.remove('active');
+                document.getElementById(`progress-${i}`).classList.remove('active', 'completed');
+            }
+            
+            // Show first step
+            document.getElementById('step1').classList.add('active');
+            document.getElementById('progress-1').classList.add('active');
+            
+            // Reset forms
+            document.getElementById('province').value = '';
+            document.getElementById('district').value = '';
+            document.getElementById('district').disabled = true;
+            document.getElementById('next1').disabled = true;
+        }
+
+        // Initial setup
+        window.onload = function() {
+            console.log('🇳🇵 Nepal Office Tracker Demo Loaded');
+        };
+    </script>
+</body>
+</html>

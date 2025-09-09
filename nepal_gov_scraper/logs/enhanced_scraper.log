@@ -1,0 +1,10 @@
+2025-09-08 19:19:17,007 - INFO - Enhanced Nepal Government Scraper initialized
+2025-09-08 19:19:17,008 - INFO - Starting enhanced Nepal Government Office scrape
+2025-09-08 19:19:17,008 - INFO - ✅ Added enhanced DAO Kathmandu
+2025-09-08 19:19:17,008 - INFO - Scraping Passport Department from: https://nepalpassport.gov.np
+2025-09-08 19:19:23,544 - INFO - ✅ Successfully processed Passport Department
+2025-09-08 19:19:23,544 - INFO - ✅ Added Passport Department
+2025-09-08 19:19:23,545 - INFO - Saved 2 offices to data/enhanced_nepal_offices_20250908_191923.json
+2025-09-08 19:19:23,545 - INFO - Enhanced scraping complete!
+2025-09-08 19:19:23,545 - INFO - Total offices: 2
+2025-09-08 19:19:23,545 - INFO - Output file: data/enhanced_nepal_offices_20250908_191923.json

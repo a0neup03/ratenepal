@@ -1,0 +1,2550 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "scraper_type": "comprehensive_factory_generated",
+    "generation_date": "2025-09-08T19:25:15.915324",
+    "total_offices": 21,
+    "data_quality": "comprehensive_with_live_enhancement",
+    "coverage_scope": "national_government_offices"
+  },
+  "data_sources": [
+    "Ministry of Home Affairs (MOHA)",
+    "Department of Passport",
+    "Department of Transport Management",
+    "Survey Department",
+    "Land Revenue Offices",
+    "Transport Management Offices",
+    "Company Registrar Office"
+  ],
+  "analysis_report": {
+    "overview": {
+      "total_offices": 21,
+      "total_services": 35,
+      "unique_service_types": 7,
+      "total_staff_members": 8,
+      "average_completeness": 88.1
+    },
+    "contact_coverage": {
+      "offices_with_phone": 21,
+      "phone_coverage_percentage": 100.0,
+      "offices_with_email": 10,
+      "email_coverage_percentage": 47.6,
+      "offices_with_website": 21,
+      "website_coverage_percentage": 100.0
+    },
+    "geographic_distribution": {
+      "Bagmati Province": 12,
+      "Gandaki Province": 3,
+      "Koshi Province": 3,
+      "Madhesh Province": 1,
+      "Lumbini Province": 2
+    },
+    "office_type_distribution": {
+      "district_administration_office": 10,
+      "passport_department": 1,
+      "transport_department": 1,
+      "survey_department": 1,
+      "land_department": 1,
+      "land_revenue_office": 3,
+      "transport_office": 3,
+      "company_registrar": 1
+    },
+    "service_availability_matrix": {
+      "citizenship": {
+        "offices_count": 10,
+        "coverage_percentage": 47.61904761904761
+      },
+      "passport": {
+        "offices_count": 11,
+        "coverage_percentage": 52.38095238095239
+      },
+      "driving_license": {
+        "offices_count": 4,
+        "coverage_percentage": 19.047619047619047
+      },
+      "company_registration": {
+        "offices_count": 1,
+        "coverage_percentage": 4.761904761904762
+      },
+      "business_license": {
+        "offices_count": 1,
+        "coverage_percentage": 4.761904761904762
+      },
+      "land_registration": {
+        "offices_count": 4,
+        "coverage_percentage": 19.047619047619047
+      },
+      "vehicle_registration": {
+        "offices_count": 4,
+        "coverage_percentage": 19.047619047619047
+      }
+    },
+    "top_offices_by_completeness": [
+      {
+        "name": "District Administration Office, Kathmandu",
+        "type": "district_administration_office",
+        "completeness": 100.0,
+        "services_count": 2,
+        "staff_count": 1
+      },
+      {
+        "name": "Department of Passport",
+        "type": "passport_department",
+        "completeness": 100.0,
+        "services_count": 1,
+        "staff_count": 1
+      },
+      {
+        "name": "Department of Transport Management",
+        "type": "transport_department",
+        "completeness": 100.0,
+        "services_count": 2,
+        "staff_count": 1
+      },
+      {
+        "name": "Department of Land Management and Archive",
+        "type": "land_department",
+        "completeness": 100.0,
+        "services_count": 1,
+        "staff_count": 1
+      },
+      {
+        "name": "Office of Company Registrar",
+        "type": "company_registrar",
+        "completeness": 100.0,
+        "services_count": 2,
+        "staff_count": 1
+      },
+      {
+        "name": "District Administration Office, Lalitpur",
+        "type": "district_administration_office",
+        "completeness": 90.0,
+        "services_count": 2,
+        "staff_count": 0
+      },
+      {
+        "name": "District Administration Office, Bhaktapur",
+        "type": "district_administration_office",
+        "completeness": 90.0,
+        "services_count": 2,
+        "staff_count": 0
+      },
+      {
+        "name": "District Administration Office, Chitwan",
+        "type": "district_administration_office",
+        "completeness": 90.0,
+        "services_count": 2,
+        "staff_count": 0
+      },
+      {
+        "name": "District Administration Office, Pokhara",
+        "type": "district_administration_office",
+        "completeness": 90.0,
+        "services_count": 2,
+        "staff_count": 0
+      },
+      {
+        "name": "Survey Department",
+        "type": "survey_department",
+        "completeness": 90.0,
+        "services_count": 0,
+        "staff_count": 1
+      }
+    ]
+  },
+  "offices": [
+    {
+      "id": "dao_kathmandu",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Kathmandu",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, काठमाडौं",
+      "location": {
+        "address": "Babarmahal, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "015362828",
+        "phone_citizenship": "015367691",
+        "email": "passport.daoktm@gmail.com",
+        "website": "https://daokathmandu.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": [
+                {
+                  "name": "Rabin Kumar Rai",
+                  "position": "Administrative Officer",
+                  "section": "Citizenship Section"
+                }
+              ]
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Rabin Kumar Rai",
+          "position": "Administrative Officer",
+          "section": "Citizenship Section"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daokathmandu.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:39.896667",
+        "data_quality": "factory_generated_enhanced_with_live",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 100.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_lalitpur",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Lalitpur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, ललितपुर",
+      "location": {
+        "address": "Pulchowk, Lalitpur",
+        "district": "Lalitpur",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "015521821",
+        "phone_citizenship": "015521822",
+        "email": "avilekh.daolalitpur@gmail.com",
+        "website": "https://daolalitpur.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daolalitpur.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:49.938945",
+        "data_quality": "factory_generated_enhanced_with_live",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_bhaktapur",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Bhaktapur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, भक्तपुर",
+      "location": {
+        "address": "Bhaktapur Durbar Square, Bhaktapur",
+        "district": "Bhaktapur",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "016610477",
+        "phone_citizenship": "016610478",
+        "email": "daobhaktapur@gmail.com",
+        "website": "https://daobhaktapur.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daobhaktapur.moha.gov.np",
+        "last_scraped": "2025-09-08T19:25:00.531242",
+        "data_quality": "factory_generated_enhanced_with_live",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_chitwan",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Chitwan",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, चितवन",
+      "location": {
+        "address": "Bharatpur-10, Chitwan",
+        "district": "Chitwan",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "056527020",
+        "phone_citizenship": "056527021",
+        "email": "daochitwanabhilekh@gmail.com",
+        "website": "https://daochitwan.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daochitwan.moha.gov.np",
+        "last_scraped": "2025-09-08T19:25:06.888843",
+        "data_quality": "factory_generated_enhanced_with_live",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_pokhara",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Pokhara",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, कास्की",
+      "location": {
+        "address": "Pokhara-8, Kaski",
+        "district": "Kaski",
+        "province": "Gandaki Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "061521045",
+        "phone_citizenship": "061521046",
+        "email": "daokaski@gmail.com",
+        "website": "https://daokaski.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daokaski.moha.gov.np",
+        "last_scraped": "2025-09-08T19:25:13.907493",
+        "data_quality": "factory_generated_enhanced_with_live",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_biratnagar",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Biratnagar",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, मोरङ",
+      "location": {
+        "address": "Biratnagar-8, Morang",
+        "district": "Morang",
+        "province": "Koshi Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "021522045",
+        "phone_citizenship": "021522046",
+        "website": "https://daomorang.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daomorang.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266288",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_birgunj",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Birgunj",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, पर्सा",
+      "location": {
+        "address": "Birgunj-14, Parsa",
+        "district": "Parsa",
+        "province": "Madhesh Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "051522789",
+        "phone_citizenship": "051522790",
+        "website": "https://daoparsa.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daoparsa.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266313",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_butwal",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Butwal",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, रुपन्देही",
+      "location": {
+        "address": "Butwal-11, Rupandehi",
+        "district": "Rupandehi",
+        "province": "Lumbini Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "071540205",
+        "phone_citizenship": "071540206",
+        "website": "https://daorupandehi.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daorupandehi.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266334",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_nepalgunj",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Nepalgunj",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, बाँके",
+      "location": {
+        "address": "Nepalgunj-7, Banke",
+        "district": "Banke",
+        "province": "Lumbini Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "081520145",
+        "phone_citizenship": "081520146",
+        "website": "https://daobanke.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daobanke.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266358",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dao_dharan",
+      "type": "district_administration_office",
+      "name": "District Administration Office, Dharan",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, सुनसरी",
+      "location": {
+        "address": "Dharan-8, Sunsari",
+        "district": "Sunsari",
+        "province": "Koshi Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "025520789",
+        "phone_citizenship": "025520790",
+        "website": "https://daosunsari.moha.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "citizenship",
+          "service_name": "Citizenship Certificate",
+          "service_name_nepali": "नागरिकता प्रमाणपत्र",
+          "sections": [
+            {
+              "section_name": "Citizenship Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 100.0,
+              "currency": "NPR",
+              "processing_days": "15-20",
+              "description": "Normal citizenship certificate processing"
+            },
+            "urgent_processing": {
+              "amount": 500.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent citizenship certificate processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-20",
+            "total_normal": "15-20",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Birth certificate",
+            "Parents' citizenship certificates",
+            "Recommendation letter from ward office",
+            "Passport size photos (2 copies)"
+          ],
+          "service_procedures": [
+            "Submit application with required documents",
+            "Document verification by officer",
+            "Field verification (if required)",
+            "Approval and certificate printing",
+            "Certificate collection"
+          ]
+        },
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://daosunsari.moha.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266377",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dept_passport",
+      "type": "passport_department",
+      "name": "Department of Passport",
+      "name_nepali": "राहदानी विभाग",
+      "location": {
+        "address": "Tripureshwor, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "15970330",
+        "phone_citizenship": "15970329",
+        "email": "communication@nepalpassport.gov.np",
+        "website": "https://nepalpassport.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "passport",
+          "service_name": "E-Passport Application",
+          "service_name_nepali": "राहदानी आवेदन",
+          "sections": [
+            {
+              "section_name": "Passport Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-30",
+              "description": "Normal e-passport application processing"
+            },
+            "urgent_processing": {
+              "amount": 12000.0,
+              "currency": "NPR",
+              "processing_days": "3-4",
+              "description": "Urgent e-passport application processing"
+            },
+            "same_day": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "1",
+              "description": "Same-day e-passport application processing"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "3-4"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Passport size photos (2 copies)",
+            "Application form",
+            "Birth certificate (for first time)"
+          ],
+          "service_procedures": [
+            "Online application submission",
+            "Document verification",
+            "Biometric data collection",
+            "Application processing",
+            "Passport printing and dispatch"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Prakash Mani Paudel",
+          "position": "Director General"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://nepalpassport.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266477",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 100.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dept_transport_management",
+      "type": "transport_department",
+      "name": "Department of Transport Management",
+      "name_nepali": "यातायात व्यवस्थापन विभाग",
+      "location": {
+        "address": "Minbhawan, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "014211081",
+        "phone_citizenship": "014211082",
+        "email": "info@dotm.gov.np",
+        "website": "https://dotm.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "vehicle_registration",
+          "service_name": "Vehicle Registration",
+          "service_name_nepali": "सवारी दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "3-7",
+              "description": "Vehicle registration (car)"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "3-7",
+            "total_normal": "3-7"
+          },
+          "required_documents": [
+            "Ownership certificate",
+            "Insurance papers",
+            "Citizenship certificate",
+            "Tax clearance"
+          ],
+          "service_procedures": [
+            "Document submission",
+            "Vehicle inspection",
+            "Tax payment",
+            "Registration processing",
+            "Number plate issuance"
+          ]
+        },
+        {
+          "service_id": "driving_license",
+          "service_name": "Driving License",
+          "service_name_nepali": "सवारी चालक अनुमतिपत्र",
+          "sections": [
+            {
+              "section_name": "License Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 1500.0,
+              "currency": "NPR",
+              "processing_days": "7-15",
+              "description": "Smart driving license"
+            },
+            "urgent_processing": {
+              "amount": 2250.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent smart driving license"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "7-15",
+            "total_normal": "7-15",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Medical certificate",
+            "Passport size photos (4 copies)",
+            "Trial form (for new license)"
+          ],
+          "service_procedures": [
+            "Trial license application",
+            "Written examination",
+            "Practical driving test",
+            "Medical examination",
+            "Smart license issuance"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Mahindra Raj Silwal",
+          "position": "Director General"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://dotm.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266507",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 100.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "survey_department",
+      "type": "survey_department",
+      "name": "Survey Department",
+      "name_nepali": "नापी विभाग",
+      "location": {
+        "address": "Minbhawan, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "014211025",
+        "phone_citizenship": "014211026",
+        "email": "info@dos.gov.np",
+        "website": "https://dos.gov.np"
+      },
+      "staff": [
+        {
+          "name": "Susheel Dangol",
+          "position": "Director General"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://dos.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266520",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "dept_land_management_and_archive",
+      "type": "land_department",
+      "name": "Department of Land Management and Archive",
+      "name_nepali": "भूमि व्यवस्थापन तथा अभिलेख विभाग",
+      "location": {
+        "address": "Dillibazar, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "014478231",
+        "phone_citizenship": "014478232",
+        "email": "info@dolma.gov.np",
+        "website": "https://dolma.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "land_registration",
+          "service_name": "Land Registration",
+          "service_name_nepali": "जग्गा दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {},
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "7-10"
+          },
+          "required_documents": [
+            "Previous ownership documents",
+            "Citizenship certificate",
+            "Tax clearance certificate",
+            "Survey report"
+          ],
+          "service_procedures": [
+            "Document verification",
+            "Survey report review",
+            "Tax calculation and payment",
+            "Registration in government records",
+            "Certificate issuance"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Kedar Prasad Khanal",
+          "position": "Director General"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://dolma.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266538",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 100.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "lro_kathmandu",
+      "type": "land_revenue_office",
+      "name": "Land Revenue Office, Kathmandu",
+      "name_nepali": "मालपोत कार्यालय, काठमाडौं",
+      "location": {
+        "address": "Dillibazar, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "014412345",
+        "phone_citizenship": "014412346",
+        "website": "https://lrokathmandu.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "land_registration",
+          "service_name": "Land Registration",
+          "service_name_nepali": "जग्गा दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {},
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "7-10"
+          },
+          "required_documents": [
+            "Previous ownership documents",
+            "Citizenship certificate",
+            "Tax clearance certificate",
+            "Survey report"
+          ],
+          "service_procedures": [
+            "Document verification",
+            "Survey report review",
+            "Tax calculation and payment",
+            "Registration in government records",
+            "Certificate issuance"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Ram Prasad Sharma",
+          "position": "Registrar"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://lrokathmandu.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266553",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "lro_lalitpur",
+      "type": "land_revenue_office",
+      "name": "Land Revenue Office, Lalitpur",
+      "name_nepali": "मालपोत कार्यालय, ललितपुर",
+      "location": {
+        "address": "Pulchowk, Lalitpur",
+        "district": "Lalitpur",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "015521900",
+        "phone_citizenship": "015521901",
+        "website": "https://lrolalitpur.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "land_registration",
+          "service_name": "Land Registration",
+          "service_name_nepali": "जग्गा दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {},
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "7-10"
+          },
+          "required_documents": [
+            "Previous ownership documents",
+            "Citizenship certificate",
+            "Tax clearance certificate",
+            "Survey report"
+          ],
+          "service_procedures": [
+            "Document verification",
+            "Survey report review",
+            "Tax calculation and payment",
+            "Registration in government records",
+            "Certificate issuance"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://lrolalitpur.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266565",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "lro_pokhara",
+      "type": "land_revenue_office",
+      "name": "Land Revenue Office, Pokhara",
+      "name_nepali": "मालपोत कार्यालय, कास्की",
+      "location": {
+        "address": "Pokhara-9, Kaski",
+        "district": "Kaski",
+        "province": "Gandaki Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "061521900",
+        "phone_citizenship": "061521901",
+        "website": "https://lrokaski.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "land_registration",
+          "service_name": "Land Registration",
+          "service_name_nepali": "जग्गा दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {},
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-30",
+            "total_normal": "15-30",
+            "total_urgent": "7-10"
+          },
+          "required_documents": [
+            "Previous ownership documents",
+            "Citizenship certificate",
+            "Tax clearance certificate",
+            "Survey report"
+          ],
+          "service_procedures": [
+            "Document verification",
+            "Survey report review",
+            "Tax calculation and payment",
+            "Registration in government records",
+            "Certificate issuance"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://lrokaski.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266578",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "tmo_kathmandu",
+      "type": "transport_office",
+      "name": "Transport Management Office, Kathmandu",
+      "name_nepali": "यातायात व्यवस्थापन कार्यालय, काठमाडौं",
+      "location": {
+        "address": "Ekantakuna, Lalitpur",
+        "district": "Lalitpur",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "015970525",
+        "phone_citizenship": "015970526",
+        "website": "https://tmokathamndu.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "vehicle_registration",
+          "service_name": "Vehicle Registration",
+          "service_name_nepali": "सवारी दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "3-7",
+              "description": "Vehicle registration (car)"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "3-7",
+            "total_normal": "3-7"
+          },
+          "required_documents": [
+            "Ownership certificate",
+            "Insurance papers",
+            "Citizenship certificate",
+            "Tax clearance"
+          ],
+          "service_procedures": [
+            "Document submission",
+            "Vehicle inspection",
+            "Tax payment",
+            "Registration processing",
+            "Number plate issuance"
+          ]
+        },
+        {
+          "service_id": "driving_license",
+          "service_name": "Driving License",
+          "service_name_nepali": "सवारी चालक अनुमतिपत्र",
+          "sections": [
+            {
+              "section_name": "License Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 1500.0,
+              "currency": "NPR",
+              "processing_days": "7-15",
+              "description": "Smart driving license"
+            },
+            "urgent_processing": {
+              "amount": 2250.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent smart driving license"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "7-15",
+            "total_normal": "7-15",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Medical certificate",
+            "Passport size photos (4 copies)",
+            "Trial form (for new license)"
+          ],
+          "service_procedures": [
+            "Trial license application",
+            "Written examination",
+            "Practical driving test",
+            "Medical examination",
+            "Smart license issuance"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Bijay Kumar Yadav",
+          "position": "Chief"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://tmokathamndu.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266596",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 90.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "tmo_pokhara",
+      "type": "transport_office",
+      "name": "Transport Management Office, Pokhara",
+      "name_nepali": "यातायात व्यवस्थापन कार्यालय, कास्की",
+      "location": {
+        "address": "Pokhara-10, Kaski",
+        "district": "Kaski",
+        "province": "Gandaki Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "061521525",
+        "phone_citizenship": "061521526",
+        "website": "https://tmokaski.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "vehicle_registration",
+          "service_name": "Vehicle Registration",
+          "service_name_nepali": "सवारी दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "3-7",
+              "description": "Vehicle registration (car)"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "3-7",
+            "total_normal": "3-7"
+          },
+          "required_documents": [
+            "Ownership certificate",
+            "Insurance papers",
+            "Citizenship certificate",
+            "Tax clearance"
+          ],
+          "service_procedures": [
+            "Document submission",
+            "Vehicle inspection",
+            "Tax payment",
+            "Registration processing",
+            "Number plate issuance"
+          ]
+        },
+        {
+          "service_id": "driving_license",
+          "service_name": "Driving License",
+          "service_name_nepali": "सवारी चालक अनुमतिपत्र",
+          "sections": [
+            {
+              "section_name": "License Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 1500.0,
+              "currency": "NPR",
+              "processing_days": "7-15",
+              "description": "Smart driving license"
+            },
+            "urgent_processing": {
+              "amount": 2250.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent smart driving license"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "7-15",
+            "total_normal": "7-15",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Medical certificate",
+            "Passport size photos (4 copies)",
+            "Trial form (for new license)"
+          ],
+          "service_procedures": [
+            "Trial license application",
+            "Written examination",
+            "Practical driving test",
+            "Medical examination",
+            "Smart license issuance"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://tmokaski.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266613",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "tmo_biratnagar",
+      "type": "transport_office",
+      "name": "Transport Management Office, Biratnagar",
+      "name_nepali": "यातायात व्यवस्थापन कार्यालय, मोरङ",
+      "location": {
+        "address": "Biratnagar-10, Morang",
+        "district": "Morang",
+        "province": "Koshi Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "021522525",
+        "phone_citizenship": "021522526",
+        "website": "https://tmomorang.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "vehicle_registration",
+          "service_name": "Vehicle Registration",
+          "service_name_nepali": "सवारी दर्ता",
+          "sections": [
+            {
+              "section_name": "Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 15000.0,
+              "currency": "NPR",
+              "processing_days": "3-7",
+              "description": "Vehicle registration (car)"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "3-7",
+            "total_normal": "3-7"
+          },
+          "required_documents": [
+            "Ownership certificate",
+            "Insurance papers",
+            "Citizenship certificate",
+            "Tax clearance"
+          ],
+          "service_procedures": [
+            "Document submission",
+            "Vehicle inspection",
+            "Tax payment",
+            "Registration processing",
+            "Number plate issuance"
+          ]
+        },
+        {
+          "service_id": "driving_license",
+          "service_name": "Driving License",
+          "service_name_nepali": "सवारी चालक अनुमतिपत्र",
+          "sections": [
+            {
+              "section_name": "License Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 1500.0,
+              "currency": "NPR",
+              "processing_days": "7-15",
+              "description": "Smart driving license"
+            },
+            "urgent_processing": {
+              "amount": 2250.0,
+              "currency": "NPR",
+              "processing_days": "3-5",
+              "description": "Urgent smart driving license"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "7-15",
+            "total_normal": "7-15",
+            "total_urgent": "3-5"
+          },
+          "required_documents": [
+            "Citizenship certificate",
+            "Medical certificate",
+            "Passport size photos (4 copies)",
+            "Trial form (for new license)"
+          ],
+          "service_procedures": [
+            "Trial license application",
+            "Written examination",
+            "Practical driving test",
+            "Medical examination",
+            "Smart license issuance"
+          ]
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://tmomorang.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.266632",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 80.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    },
+    {
+      "id": "company_registrar",
+      "type": "company_registrar",
+      "name": "Office of Company Registrar",
+      "name_nepali": "कम्पनी रजिष्ट्रार कार्यालय",
+      "location": {
+        "address": "Tripureshwor, Kathmandu",
+        "district": "Kathmandu",
+        "province": "Bagmati Province",
+        "coordinates": {
+          "latitude": null,
+          "longitude": null
+        }
+      },
+      "contact": {
+        "phone_general": "014259109",
+        "phone_citizenship": "014259110",
+        "email": "info@ocr.gov.np",
+        "website": "https://ocr.gov.np"
+      },
+      "services": [
+        {
+          "service_id": "business_license",
+          "service_name": "Business License",
+          "service_name_nepali": "व्यापार अनुमतिपत्र",
+          "sections": [
+            {
+              "section_name": "Licensing Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 2000.0,
+              "currency": "NPR",
+              "processing_days": "7-15",
+              "description": "Medium business license"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "7-15",
+            "total_normal": "7-15"
+          },
+          "required_documents": [
+            "PAN certificate",
+            "Citizenship certificate",
+            "Office premises proof",
+            "Environmental clearance (if required)"
+          ],
+          "service_procedures": [
+            "Application submission",
+            "Document verification",
+            "Processing and approval",
+            "Certificate/License issuance"
+          ]
+        },
+        {
+          "service_id": "company_registration",
+          "service_name": "Company Registration",
+          "service_name_nepali": "कम्पनी दर्ता",
+          "sections": [
+            {
+              "section_name": "Company Registration Section",
+              "staff": []
+            }
+          ],
+          "fees": {
+            "normal_processing": {
+              "amount": 5000.0,
+              "currency": "NPR",
+              "processing_days": "15-21",
+              "description": "Private limited company registration"
+            }
+          },
+          "processing_times": {
+            "document_submission": "30 minutes",
+            "verification_process": "15-21",
+            "total_normal": "15-21"
+          },
+          "required_documents": [
+            "Memorandum of Association",
+            "Articles of Association",
+            "Name reservation certificate",
+            "Directors' details"
+          ],
+          "service_procedures": [
+            "Name reservation",
+            "Document submission",
+            "Legal compliance check",
+            "Registration approval",
+            "Certificate issuance"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "name": "Rajesh Kumar Jha",
+          "position": "Registrar"
+        }
+      ],
+      "operating_hours": {
+        "monday_friday": "10:00 AM - 5:00 PM",
+        "saturday": "10:00 AM - 3:00 PM",
+        "sunday": "closed",
+        "lunch_break": "1:00 PM - 2:00 PM",
+        "notes": "Hours may vary during festivals and public holidays"
+      },
+      "metadata": {
+        "data_source": "https://ocr.gov.np",
+        "last_scraped": "2025-09-08T19:24:36.267146",
+        "data_quality": "comprehensive_factory_generated",
+        "verification_status": "verified",
+        "schema_version": "1.0.0",
+        "completeness_score": 100.0,
+        "scraper_version": "office_factory_1.0.0",
+        "extraction_method": "factory_generated"
+      }
+    }
+  ]
+}

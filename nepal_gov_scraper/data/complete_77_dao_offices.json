@@ -1,0 +1,1239 @@
+{
+  "metadata": {
+    "generation_date": "2025-09-08T19:51:35.070630",
+    "total_districts": 77,
+    "total_daos": 77,
+    "coverage": "complete_77_districts",
+    "source": "official_nepal_districts_list"
+  },
+  "summary": {
+    "provinces": {
+      "Koshi Province": 14,
+      "Madhesh Province": 8,
+      "Bagmati Province": 13,
+      "Gandaki Province": 11,
+      "Lumbini Province": 12,
+      "Karnali Province": 10,
+      "Sudurpashchim Province": 9
+    },
+    "priority_distribution": {
+      "high": 8,
+      "medium": 25,
+      "standard": 44
+    }
+  },
+  "dao_offices": [
+    {
+      "name": "District Administration Office, Bhojpur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Bhojpur",
+      "url": "https://daobhojpur.moha.gov.np",
+      "district": "Bhojpur",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dhankuta",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dhankuta",
+      "url": "https://daodhankuta.moha.gov.np",
+      "district": "Dhankuta",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Ilam",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Ilam",
+      "url": "https://daoilam.moha.gov.np",
+      "district": "Ilam",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Jhapa",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Jhapa",
+      "url": "https://daojhapa.moha.gov.np",
+      "district": "Jhapa",
+      "province": "Koshi Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Khotang",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Khotang",
+      "url": "https://daokhotang.moha.gov.np",
+      "district": "Khotang",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Morang",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Morang",
+      "url": "https://daomorang.moha.gov.np",
+      "district": "Morang",
+      "province": "Koshi Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "021-522045",
+        "021-522046"
+      ],
+      "address": "Biratnagar-8, Morang"
+    },
+    {
+      "name": "District Administration Office, Okhaldhunga",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Okhaldhunga",
+      "url": "https://daookhaldhunga.moha.gov.np",
+      "district": "Okhaldhunga",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Panchthar",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Panchthar",
+      "url": "https://daopanchthar.moha.gov.np",
+      "district": "Panchthar",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Sankhuwasabha",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Sankhuwasabha",
+      "url": "https://daosankhuwasabha.moha.gov.np",
+      "district": "Sankhuwasabha",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Solukhumbu",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Solukhumbu",
+      "url": "https://daosolukhumbu.moha.gov.np",
+      "district": "Solukhumbu",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Sunsari",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Sunsari",
+      "url": "https://daosunsari.moha.gov.np",
+      "district": "Sunsari",
+      "province": "Koshi Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "025-520789",
+        "025-520790"
+      ],
+      "address": "Dharan-8, Sunsari"
+    },
+    {
+      "name": "District Administration Office, Taplejung",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Taplejung",
+      "url": "https://daotaplejung.moha.gov.np",
+      "district": "Taplejung",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Terhathum",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Terhathum",
+      "url": "https://daoterhathum.moha.gov.np",
+      "district": "Terhathum",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Udayapur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Udayapur",
+      "url": "https://daoudayapur.moha.gov.np",
+      "district": "Udayapur",
+      "province": "Koshi Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Bara",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Bara",
+      "url": "https://daobara.moha.gov.np",
+      "district": "Bara",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dhanusha",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dhanusha",
+      "url": "https://daodhanusha.moha.gov.np",
+      "district": "Dhanusha",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Mahottari",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Mahottari",
+      "url": "https://daomahottari.moha.gov.np",
+      "district": "Mahottari",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Parsa",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Parsa",
+      "url": "https://daoparsa.moha.gov.np",
+      "district": "Parsa",
+      "province": "Madhesh Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "051-522789",
+        "051-522790"
+      ],
+      "address": "Birgunj-14, Parsa"
+    },
+    {
+      "name": "District Administration Office, Rautahat",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Rautahat",
+      "url": "https://daorautahat.moha.gov.np",
+      "district": "Rautahat",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Saptari",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Saptari",
+      "url": "https://daosaptari.moha.gov.np",
+      "district": "Saptari",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Sarlahi",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Sarlahi",
+      "url": "https://daosarlahi.moha.gov.np",
+      "district": "Sarlahi",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Siraha",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Siraha",
+      "url": "https://daosiraha.moha.gov.np",
+      "district": "Siraha",
+      "province": "Madhesh Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Bhaktapur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Bhaktapur",
+      "url": "https://daobhaktapur.moha.gov.np",
+      "district": "Bhaktapur",
+      "province": "Bagmati Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "01-6610477",
+        "01-6610478"
+      ],
+      "address": "Bhaktapur Durbar Square, Bhaktapur"
+    },
+    {
+      "name": "District Administration Office, Chitwan",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Chitwan",
+      "url": "https://daochitwan.moha.gov.np",
+      "district": "Chitwan",
+      "province": "Bagmati Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "056-527020",
+        "056-527021"
+      ],
+      "address": "Bharatpur-10, Chitwan"
+    },
+    {
+      "name": "District Administration Office, Dhading",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dhading",
+      "url": "https://daodhading.moha.gov.np",
+      "district": "Dhading",
+      "province": "Bagmati Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dolakha",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dolakha",
+      "url": "https://daodolakha.moha.gov.np",
+      "district": "Dolakha",
+      "province": "Bagmati Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Kathmandu",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kathmandu",
+      "url": "https://daokathmandu.moha.gov.np",
+      "district": "Kathmandu",
+      "province": "Bagmati Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "01-5362828",
+        "01-5367691"
+      ],
+      "address": "Babarmahal, Kathmandu",
+      "staff": [
+        {
+          "name": "Rabin Kumar Rai",
+          "position": "Administrative Officer",
+          "section": "Citizenship Section"
+        }
+      ]
+    },
+    {
+      "name": "District Administration Office, Kavrepalanchok",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kavrepalanchok",
+      "url": "https://daokavrepalanchok.moha.gov.np",
+      "district": "Kavrepalanchok",
+      "province": "Bagmati Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Lalitpur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Lalitpur",
+      "url": "https://daolalitpur.moha.gov.np",
+      "district": "Lalitpur",
+      "province": "Bagmati Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "01-5521821",
+        "01-5521822"
+      ],
+      "address": "Pulchowk, Lalitpur"
+    },
+    {
+      "name": "District Administration Office, Makwanpur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Makwanpur",
+      "url": "https://daomakwanpur.moha.gov.np",
+      "district": "Makwanpur",
+      "province": "Bagmati Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Nuwakot",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Nuwakot",
+      "url": "https://daonuwakot.moha.gov.np",
+      "district": "Nuwakot",
+      "province": "Bagmati Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Ramechhap",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Ramechhap",
+      "url": "https://daoramechhap.moha.gov.np",
+      "district": "Ramechhap",
+      "province": "Bagmati Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Rasuwa",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Rasuwa",
+      "url": "https://daorasuwa.moha.gov.np",
+      "district": "Rasuwa",
+      "province": "Bagmati Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Sindhuli",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Sindhuli",
+      "url": "https://daosindhuli.moha.gov.np",
+      "district": "Sindhuli",
+      "province": "Bagmati Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Sindhupalchok",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Sindhupalchok",
+      "url": "https://daosindhupalchok.moha.gov.np",
+      "district": "Sindhupalchok",
+      "province": "Bagmati Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Baglung",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Baglung",
+      "url": "https://daobaglung.moha.gov.np",
+      "district": "Baglung",
+      "province": "Gandaki Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Gorkha",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Gorkha",
+      "url": "https://daogorkha.moha.gov.np",
+      "district": "Gorkha",
+      "province": "Gandaki Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Kaski",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kaski",
+      "url": "https://daokaski.moha.gov.np",
+      "district": "Kaski",
+      "province": "Gandaki Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "061-521045",
+        "061-521046"
+      ],
+      "address": "Pokhara-8, Kaski"
+    },
+    {
+      "name": "District Administration Office, Lamjung",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Lamjung",
+      "url": "https://daolamjung.moha.gov.np",
+      "district": "Lamjung",
+      "province": "Gandaki Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Manang",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Manang",
+      "url": "https://daomanang.moha.gov.np",
+      "district": "Manang",
+      "province": "Gandaki Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Mustang",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Mustang",
+      "url": "https://daomustang.moha.gov.np",
+      "district": "Mustang",
+      "province": "Gandaki Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Myagdi",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Myagdi",
+      "url": "https://daomyagdi.moha.gov.np",
+      "district": "Myagdi",
+      "province": "Gandaki Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Nawalpur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Nawalpur",
+      "url": "https://daonawalpur.moha.gov.np",
+      "district": "Nawalpur",
+      "province": "Gandaki Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Parbat",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Parbat",
+      "url": "https://daoparbat.moha.gov.np",
+      "district": "Parbat",
+      "province": "Gandaki Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Syangja",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Syangja",
+      "url": "https://daosyangja.moha.gov.np",
+      "district": "Syangja",
+      "province": "Gandaki Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Tanahu",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Tanahu",
+      "url": "https://daotanahu.moha.gov.np",
+      "district": "Tanahu",
+      "province": "Gandaki Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Arghakhanchi",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Arghakhanchi",
+      "url": "https://daoarghakhanchi.moha.gov.np",
+      "district": "Arghakhanchi",
+      "province": "Lumbini Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Banke",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Banke",
+      "url": "https://daobanke.moha.gov.np",
+      "district": "Banke",
+      "province": "Lumbini Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "081-520145",
+        "081-520146"
+      ],
+      "address": "Nepalgunj-7, Banke"
+    },
+    {
+      "name": "District Administration Office, Bardiya",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Bardiya",
+      "url": "https://daobardiya.moha.gov.np",
+      "district": "Bardiya",
+      "province": "Lumbini Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dang",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dang",
+      "url": "https://daodang.moha.gov.np",
+      "district": "Dang",
+      "province": "Lumbini Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Gulmi",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Gulmi",
+      "url": "https://daogulmi.moha.gov.np",
+      "district": "Gulmi",
+      "province": "Lumbini Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Kapilvastu",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kapilvastu",
+      "url": "https://daokapilvastu.moha.gov.np",
+      "district": "Kapilvastu",
+      "province": "Lumbini Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Palpa",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Palpa",
+      "url": "https://daopalpa.moha.gov.np",
+      "district": "Palpa",
+      "province": "Lumbini Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Pyuthan",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Pyuthan",
+      "url": "https://daopyuthan.moha.gov.np",
+      "district": "Pyuthan",
+      "province": "Lumbini Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Rolpa",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Rolpa",
+      "url": "https://daorolpa.moha.gov.np",
+      "district": "Rolpa",
+      "province": "Lumbini Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Rukum East",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Rukum East",
+      "url": "https://daorukumeast.moha.gov.np",
+      "district": "Rukum East",
+      "province": "Lumbini Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Rupandehi",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Rupandehi",
+      "url": "https://daorupandehi.moha.gov.np",
+      "district": "Rupandehi",
+      "province": "Lumbini Province",
+      "priority": 1,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list",
+      "phones": [
+        "071-540205",
+        "071-540206"
+      ],
+      "address": "Butwal-11, Rupandehi"
+    },
+    {
+      "name": "District Administration Office, Salyan",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Salyan",
+      "url": "https://daosalyan.moha.gov.np",
+      "district": "Salyan",
+      "province": "Lumbini Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dailekh",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dailekh",
+      "url": "https://daodailekh.moha.gov.np",
+      "district": "Dailekh",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dolpa",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dolpa",
+      "url": "https://daodolpa.moha.gov.np",
+      "district": "Dolpa",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Humla",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Humla",
+      "url": "https://daohumla.moha.gov.np",
+      "district": "Humla",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Jajarkot",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Jajarkot",
+      "url": "https://daojajarkot.moha.gov.np",
+      "district": "Jajarkot",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Jumla",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Jumla",
+      "url": "https://daojumla.moha.gov.np",
+      "district": "Jumla",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Kalikot",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kalikot",
+      "url": "https://daokalikot.moha.gov.np",
+      "district": "Kalikot",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Mugu",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Mugu",
+      "url": "https://daomugu.moha.gov.np",
+      "district": "Mugu",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Rukum West",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Rukum West",
+      "url": "https://daorukumwest.moha.gov.np",
+      "district": "Rukum West",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Salyan",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Salyan",
+      "url": "https://daosalyan.moha.gov.np",
+      "district": "Salyan",
+      "province": "Karnali Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Surkhet",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Surkhet",
+      "url": "https://daosurkhet.moha.gov.np",
+      "district": "Surkhet",
+      "province": "Karnali Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Achham",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Achham",
+      "url": "https://daoachham.moha.gov.np",
+      "district": "Achham",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Baitadi",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Baitadi",
+      "url": "https://daobaitadi.moha.gov.np",
+      "district": "Baitadi",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Bajhang",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Bajhang",
+      "url": "https://daobajhang.moha.gov.np",
+      "district": "Bajhang",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Bajura",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Bajura",
+      "url": "https://daobajura.moha.gov.np",
+      "district": "Bajura",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Dadeldhura",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Dadeldhura",
+      "url": "https://daodadeldhura.moha.gov.np",
+      "district": "Dadeldhura",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Darchula",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Darchula",
+      "url": "https://daodarchula.moha.gov.np",
+      "district": "Darchula",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Doti",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Doti",
+      "url": "https://daodoti.moha.gov.np",
+      "district": "Doti",
+      "province": "Sudurpashchim Province",
+      "priority": 3,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Kailali",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kailali",
+      "url": "https://daokailali.moha.gov.np",
+      "district": "Kailali",
+      "province": "Sudurpashchim Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    },
+    {
+      "name": "District Administration Office, Kanchanpur",
+      "name_nepali": "जिल्ला प्रशासन कार्यालय, Kanchanpur",
+      "url": "https://daokanchanpur.moha.gov.np",
+      "district": "Kanchanpur",
+      "province": "Sudurpashchim Province",
+      "priority": 2,
+      "office_type": "district_administration_office",
+      "services": [
+        "citizenship",
+        "passport",
+        "licenses"
+      ],
+      "source": "comprehensive_district_list"
+    }
+  ]
+}
